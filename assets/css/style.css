@@ -4,14 +4,17 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: 10.5rem;
+    padding-top: 12.5rem;
     height: 100%;
+    background-color: #eee;
 }
 
 
 #img-wrapper {
     position: relative;
     z-index: 1;
+    padding: 0;
+    margin: 0;
 }
 
 #img-wrapper:before {
@@ -22,34 +25,43 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(/assets/images/band_bw.jpg) no-repeat 0 170px fixed;
-    opacity: 0.7;
+    background: url(/assets/images/band_bw.jpg) no-repeat fixed -100px 200px;
+    background-size: cover;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
 }
 
+
+#img-wrapper {
+    opacity: 0.8;
+}
 
 .inline-block {
     display: inline-block;
 }
+
 /* ==================== NAVIGATION ============== */
 
-.navlogo {
-    width: 100px;
+.navbar {
+    background-color: #191008;
+    min-height: 200px;
+    border-bottom: 1px solid #ec1e2b;
+    padding: 0;
 }
 
-.navbar {
-    background-color: #281a11;
-    min-height: 150px;
+.navbar-header {
+    width: 220px;
+    height: 200px;
+    margin-left: 50px;
 }
 
 .navbar-header a {
-    background: url("/assets/images/logo_redtransparent.png") no-repeat;
-    background-size: contain;
-    height: 150px;
-    width: 150px;
+    background: url("/assets/images/bannerlogo.png") no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    min-width: 220px;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -69,10 +81,16 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
     font-weight: 900;
+    background-color: #3a2e15;
+    outline: 0;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: transparent;
 }
 
 .navbar-light .navbar-nav .nav-link:active:before,
@@ -108,21 +126,27 @@ body {
     margin-right: 30px;
 }
 
+button:focus {
+    outline: 0;
+}
+
 .navbar-collapse {
     Border-top: 1px solid #ac935d;
     padding: 0;
     text-align: center;
 }
 
+.button-div {
+    height: 200px;
+    padding-top: 30px;
+}
 
 /* ======================================= CONTENT ==============================================*/
 
-
- 
 /* ==================== NEWS ===================*/
 
 .news-post-container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(40, 26, 17, 0.9);
     width: 85%;
     margin: 50px auto;
 }
@@ -131,16 +155,17 @@ body {
     padding: 30px 20px;
 }
 
-.news-post .news-post-date {
+.news-post-date {
     font-size: 15px;
     color: #fff;
+    border-bottom: 1px solid #979291;
 }
 
 .news-post h1 {
     font-size: 25px;
-    margin-bottom: 15px;
-    color: #979291;
+    color: #e1e1e1;
     margin-bottom: 30px;
+    font-weight: 900;
 }
 
 .news-post-text {
@@ -148,6 +173,20 @@ body {
     font-size: 14px;
 }
 
+.news-post a {
+    color: #fff;
+    padding-left: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.news-post a:hover {
+    color: #ff0000;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
 
 /* ==================== FOOTER ===================*/
 
@@ -156,15 +195,16 @@ body {
     min-height: 50px;
     padding: 0;
     margin: 0;
+    border-top: 1px solid #ec1e2b;
 }
 
-.footer-icons > ul {
+.footer-icons>ul {
     padding: 0;
     margin: 0;
     display: inline-block;
 }
 
-.footer-icons > ul {
+.footer-icons>ul {
     padding-top: 4px;
 }
 
@@ -193,7 +233,7 @@ body {
     font-weight: 800;
 }
 
-footer  p {
+footer p {
     margin-bottom: 0;
     line-height: 50px;
     padding-left: 5px;
@@ -203,21 +243,43 @@ footer  p {
 /* ==================== MEDIA QUERIES ===================*/
 
 /* Small devices (landscape phones, 576px and up)*/
+
 @media (min-width: 576px) {
     ul.navbar-nav {
         margin-left: 10px;
     }
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: #3a2e15;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
+
 @media (min-width: 768px) {
     .navbar-collapse {
         Border-top: 0px;
     }
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: transparent;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: transparent;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+
+@media (min-width: 1200px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        background-color: transparent;
+    }
+    #img-wrapper:before {
+        background: url(/assets/images/band_bw.jpg) no-repeat fixed 0 200px;
+        background-size: cover;
+    }
+}
