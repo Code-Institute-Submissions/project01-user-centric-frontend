@@ -4,11 +4,36 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    padding-top: 10rem;
+    padding-top: 10.5rem;
     height: 100%;
-    /*background-color: yellow;*/
 }
 
+
+#img-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+#img-wrapper:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/assets/images/band_bw.jpg) no-repeat 0 170px fixed;
+    opacity: 0.7;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.inline-block {
+    display: inline-block;
+}
 /* ==================== NAVIGATION ============== */
 
 .navlogo {
@@ -17,6 +42,7 @@ body {
 
 .navbar {
     background-color: #281a11;
+    min-height: 150px;
 }
 
 .navbar-header a {
@@ -35,6 +61,7 @@ body {
 .navbar-light .navbar-nav .nav-link {
     color: #ac935d;
     font-weight: 900;
+    transition: 1s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -42,6 +69,10 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
     font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link:active:before,
@@ -84,36 +115,13 @@ body {
 }
 
 
-/* ==================== CONTENT ===================*/
+/* ======================================= CONTENT ==============================================*/
 
-.news-content::after {
-    content: "";
-    background: url("/assets/images/band_bw.jpg") 0px 170px;
-    /*background-repeat: repeat-y;*/
-    /*background-attachment: scroll;*/
-    /*background-size: contain;*/
-    opacity: 0.7;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-    min-height: 900px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center 170px;
-    background-attachment: fixed;
-    height: 100%;
-}
 
-.image-col {
-    min-height: 500px;
-}
-
+ 
 /* ==================== NEWS ===================*/
 
-.news-container {
+.news-post-container {
     background-color: rgba(0, 0, 0, 0.7);
     width: 85%;
     margin: 50px auto;
@@ -143,24 +151,52 @@ body {
 
 /* ==================== FOOTER ===================*/
 
+.footer-content {
+    background-color: #281a11;
+    min-height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-icons > ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.footer-icons > ul {
+    padding-top: 4px;
+}
+
 .social-icons li a i {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 12px 0;
-    border-radius: 0%;
-    font-size: 40px;
-    line-height: 30px;
+    border-radius: 20%;
+    font-size: 25px;
+    line-height: 20px;
     text-align: center;
     color: #ec1e2b;
-    background: #eee;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .social-icons li a i:hover {
-    background: #333;
+    background: #ac935d;
+}
+
+.footer-text {
+    color: #ac935d;
+    font-weight: 800;
+}
+
+footer  p {
+    margin-bottom: 0;
+    line-height: 50px;
+    padding-left: 5px;
 }
 
 
