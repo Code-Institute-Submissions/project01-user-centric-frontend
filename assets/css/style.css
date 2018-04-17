@@ -6,7 +6,10 @@ body {
     font-family: 'Raleway', sans-serif;
     padding-top: 12.5rem;
     height: 100%;
-    background-color: #eee;
+    background-color: #dfd4be;
+}
+section {
+    z-index: 2000;
 }
 
 /*
@@ -146,10 +149,11 @@ button:focus {
 
 /* ======================================= CONTENT ==============================================*/
 
-/* ==================== NEWS, ABOUT US===================*/
+/* ==================== NEWS, ABOUT US ===================*/
 
 .news-post-container,
-.aboutus-person-container {
+.aboutus-person-container,
+.form-container {
     background-color: rgba(40, 26, 17, 0.9);
     width: 85%;
     margin: 50px auto;
@@ -164,7 +168,8 @@ button:focus {
 }
 
 .news-post,
-.aboutus-person {
+.aboutus-person,
+.form-elements{
     padding: 30px 20px;
 }
 
@@ -175,7 +180,8 @@ button:focus {
     border-bottom: 1px solid #979291;
 }
 
-.news-post h1 {
+.news-post h1,
+.form-elements h1{
     font-size: 25px;
     color: #e1e1e1;
     margin-bottom: 30px;
@@ -183,7 +189,8 @@ button:focus {
 }
 
 .news-post-text,
-.person-text-profile {
+.person-text-profile,
+.form-text {
     color: #fff;
     font-size: 14px;
 }
@@ -222,7 +229,16 @@ p.person-text-sociallinks {
     padding-left: 0;
 }
 
+/* ==================== BOOK US FORM ===================*/
 
+label {
+    color: #fff;
+}
+
+.button-align {
+    text-align: right;
+    margin-right: 100px;
+}
 
 /* ==================== FOOTER ===================*/
 
