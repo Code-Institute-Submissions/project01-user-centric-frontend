@@ -9,7 +9,7 @@ body {
     background-color: #eee;
 }
 
-
+/*
 #img-wrapper {
     position: relative;
     z-index: 1;
@@ -27,15 +27,18 @@ body {
     right: 0;
     background: url(/assets/images/band_bw.jpg) no-repeat fixed -100px 200px;
     background-size: cover;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-
+*/
 
 #img-wrapper {
-    opacity: 0.8;
+    background: url(/assets/images/band_bw.jpg) no-repeat fixed 0px 200px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .inline-block {
@@ -54,7 +57,7 @@ body {
 .navbar-header {
     width: 220px;
     height: 200px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .navbar-header a {
@@ -143,19 +146,30 @@ button:focus {
 
 /* ======================================= CONTENT ==============================================*/
 
-/* ==================== NEWS ===================*/
+/* ==================== NEWS, ABOUT US===================*/
 
-.news-post-container {
+.news-post-container,
+.aboutus-person-container {
     background-color: rgba(40, 26, 17, 0.9);
     width: 85%;
     margin: 50px auto;
 }
 
-.news-post {
+.aboutus-person-container-left {
+    margin-bottom: 20px;
+}
+
+.aboutus-person-container {
+    width: 85%;
+}
+
+.news-post,
+.aboutus-person {
     padding: 30px 20px;
 }
 
-.news-post-date {
+.news-post-date,
+.person-text-name {
     font-size: 15px;
     color: #fff;
     border-bottom: 1px solid #979291;
@@ -168,18 +182,29 @@ button:focus {
     font-weight: 900;
 }
 
-.news-post-text {
+.news-post-text,
+.person-text-profile {
     color: #fff;
     font-size: 14px;
 }
 
-.news-post a {
+p.person-text-sociallinks {
+    font-size: 0.75em;
+}
+
+.news-post a,
+.person-text-sociallinks a,
+.person-text-sociallinks i {
     color: #fff;
-    padding-left: 20px;
     transition: 0.2s ease-in-out;
 }
 
-.news-post a:hover {
+.person-text-sociallinks i {
+    padding-right: 6px;
+}
+
+.news-post a:hover,
+.person-text-sociallinks a:hover {
     color: #ff0000;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
@@ -187,6 +212,17 @@ button:focus {
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
 }
+
+.person-image img {
+    width: 100%;
+}
+
+.person-text-sociallinks span {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+
 
 /* ==================== FOOTER ===================*/
 
@@ -250,6 +286,19 @@ footer p {
     }
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: #3a2e15;
+    }
+    .navbar-header {
+        margin-left: 50px;
+    }
+    .aboutus-person-container-left {
+        margin-bottom: 100px;
+    }
+
+    .aboutus-person-container-right {
+        margin-top: 190px;
+    }
+    .aboutus-person-container {
+        width: 65%;
     }
 }
 
