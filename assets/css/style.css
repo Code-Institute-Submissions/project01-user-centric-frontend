@@ -4,12 +4,20 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
+    color: #333;
     padding-top: 12.5rem;
     height: 100%;
     background-color: #dfd4be;
 }
-section {
-    z-index: 2000;
+
+.tracks-wrapper,
+.audio-wrapper {
+    background-color: #ec1e2b;
+    color: #fafafa;
+}
+
+.videos-wrapper {
+    background-color: #fff;
 }
 
 /*
@@ -46,6 +54,27 @@ section {
 
 .inline-block {
     display: inline-block;
+}
+
+/* ==================== LOCAL NAVIGATION ============== */
+
+.local-navigation {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn-catalogue {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    font-weight: 900;
+    padding: 12px 25px;
+    outline: 0;
+}
+
+
+.btn-catalogue:hover {
+    background-color: #ec1e2b;
 }
 
 /* ==================== NAVIGATION ============== */
@@ -149,7 +178,7 @@ button:focus {
 
 /* ======================================= CONTENT ==============================================*/
 
-/* ==================== NEWS, ABOUT US ===================*/
+/* ==================== NEWS, ABOUT US, BOOK US ===================*/
 
 .news-post-container,
 .aboutus-person-container,
@@ -160,7 +189,11 @@ button:focus {
 }
 
 .aboutus-person-container-left {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.aboutus-person-container-right {
+    margin-top: 0;
 }
 
 .aboutus-person-container {
@@ -169,7 +202,7 @@ button:focus {
 
 .news-post,
 .aboutus-person,
-.form-elements{
+.form-elements {
     padding: 30px 20px;
 }
 
@@ -181,7 +214,7 @@ button:focus {
 }
 
 .news-post h1,
-.form-elements h1{
+.form-elements h1 {
     font-size: 25px;
     color: #e1e1e1;
     margin-bottom: 30px;
@@ -192,11 +225,10 @@ button:focus {
 .person-text-profile,
 .form-text {
     color: #fff;
-    font-size: 14px;
 }
 
-p.person-text-sociallinks {
-    font-size: 0.75em;
+.person-text-sociallinks {
+    font-size: 1em;
 }
 
 .news-post a,
@@ -207,7 +239,7 @@ p.person-text-sociallinks {
 }
 
 .person-text-sociallinks i {
-    padding-right: 6px;
+    padding-right: 10px;
 }
 
 .news-post a:hover,
@@ -225,8 +257,141 @@ p.person-text-sociallinks {
 }
 
 .person-text-sociallinks span {
-    padding-right: 10px;
+    padding-right: 15px;
     padding-left: 0;
+}
+
+#person-text-sociallinks-two {
+    display: block;
+    padding: 0;
+}
+
+/* ==================== CATALOGUE ===================*/
+
+.catalogue-container {
+    padding: 0 0 50px 0;
+}
+
+.container row,
+.container col {
+    padding: 0;
+    margin: 0;
+}
+
+.catalogue-content {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.section-header {
+    margin-bottom: 0px;
+    border-bottom: 0;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-header h1 {
+    margin: 0;
+    font-weight: 800;
+}
+
+.album-tracklist {
+    padding-left: 30px;
+}
+
+.album-tracklist ol {
+    padding: 0;
+    margin: 0;
+    margin-right: 50px;
+}
+
+.album-tracklist ol li {
+    list-style-position: inside;
+    list-style-type: lower-roman;
+    padding: 20px;
+    padding-left: 0;
+    border-bottom: 1px solid #fafafa;
+}
+
+.album-tracklist ol li::before {
+    content: "";
+    width: 20px;
+    display: inline-block;
+}
+
+.album-coverimage img {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.video-list {
+    text-align: center;
+}
+
+.video-container0,
+.video-container1,
+.video-container2,
+.video-container3,
+.video-container4,
+.video-container5,
+.video-container6 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container0 iframe,
+.video-container1 iframe,
+.video-container2 iframe,
+.video-container3 iframe,
+.video-container4 iframe,
+.video-container5 iframe,
+.video-container6 iframe,
+.video-container0 object,
+.video-container1 object,
+.video-container2 object,
+.video-container3 object,
+.video-container4 object,
+.video-container5 object,
+.video-container6 object,
+.video-container0 embed,
+.video-container1 embed,
+.video-container2 embed,
+.video-container3 embed,
+.video-container4 embed,
+.video-container5 embed,
+.video-container6 embed {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+audio {
+    background-color: #fff;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #fafafa;
+}
+
+.song-list {
+    text-align: center;
+}
+
+.song-title {
+    color: #fafafa;
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-left: 10px;
+}
+
+.song-play {
+    margin-left: 10px;
+    margin-bottom: 50px;
 }
 
 /* ==================== BOOK US FORM ===================*/
@@ -283,6 +448,8 @@ label {
 .footer-text {
     color: #ac935d;
     font-weight: 800;
+    white-space: nowrap;
+    font-size: 0.8em;
 }
 
 footer p {
@@ -309,13 +476,19 @@ footer p {
     .aboutus-person-container-left {
         margin-bottom: 100px;
     }
-
     .aboutus-person-container-right {
         margin-top: 190px;
     }
     .aboutus-person-container {
-        width: 65%;
+        width: 85%;
     }
+    .footer-text {
+        font-size: 1em;
+    }
+    .album-coverimage img {
+        padding-top: 0;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -324,27 +497,56 @@ footer p {
     .navbar-collapse {
         Border-top: 0px;
     }
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:focus,
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: transparent;
+    }
+    p.person-text-sociallinks {
+        font-size: 0.9em;
+    }
+    .aboutus-person-container {
+        width: 75%;
+    }
+    #person-text-sociallinks-two {
+        display: block;
+        padding-right: 15px;
+    }
+    .video-col-left iframe {
+        left: 20%;
+    }
+    .video-col-right iframe {
+        left: 0;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:focus,
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: transparent;
     }
+    #person-text-sociallinks-two {
+        display: inline-block;
+        padding-right: 0;
+    }
+    .local-navigation {
+        text-align: center;
+        margin: 50px 300px;
+    }    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link:focus,
     .navbar-light .navbar-nav .nav-link:hover {
         background-color: transparent;
     }
-    #img-wrapper:before {
-        background: url(/assets/images/band_bw.jpg) no-repeat fixed 0 200px;
-        background-size: cover;
+    p.person-text-sociallinks {
+        font-size: 1em;
     }
 }
