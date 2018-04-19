@@ -3,7 +3,7 @@ body {
   height: 100%;
   background-color: #333;
   background: url("/assets/images/band_bw.jpg") no-repeat scroll 0px 100px / cover;
-  
+
 }
 
 body {
@@ -22,6 +22,7 @@ body {
 /*
  * Header
  */
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -43,13 +44,18 @@ body {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link+.nav-link {
   margin-left: 1rem;
 }
 
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.navbar>.container,
+.navbar>.container-fluid {
+  justify-content: flex-end;
 }
 
 @media (min-width: 48em) {
@@ -65,28 +71,77 @@ body {
 /*
  * Cover
  */
+
 .cover {
   padding: 0 1.5rem;
 }
+
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
 
-.divide-cover {
+.main-image-logo {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.main-image-logo img {
+  width: 70%;
+}
+
+.cover-heading {
+  font-size: 1.5rem;
   background-color: #ec1e2b;
-  padding: 50px 50px;
-  border-radius: 1em;
+  padding: 2.5rem 1.5rem;
+  border-radius: 0.5em;
+}
+
+.divide-cover-textbox {
+  background-color: rgba(236, 30, 43, 0.3);
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5em;
+  font-size: 0.8rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.list-inline .list-inline-item {
+  margin-right: 0;
 }
 
 .lead {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 /*
  * Footer
  */
+
 .mastfoot {
   color: rgba(255, 255, 255, .5);
   background-color: rgba(25, 16, 8, 0.9);
+}
+
+.copyright-text {
+  float: left;
+  width: 50%;
+}
+
+.footer-list {
+  float: right;
+  width: 50%;
+}
+
+@media (min-width: 28em) {
+  .cover-heading {
+    font-size: 3.5rem;
+  }
+  .divide-cover-textbox {
+    font-size: 1.5rem;
+  }
+  .list-inline .list-inline-item {
+    margin-right: 1.5rem;
+  }
 }

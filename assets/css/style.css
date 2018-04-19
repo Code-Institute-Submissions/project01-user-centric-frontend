@@ -57,7 +57,7 @@ body {
 */
 
 #img-wrapper {
-    background: url(/assets/images/band_bw.jpg) no-repeat fixed 0px 200px;
+    background: url(/assets/images/band_bw.jpg) no-repeat fixed 0px 100px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -179,12 +179,17 @@ body {
     margin-right: 30px;
 }
 
+.navbar-toggler:hover,
+.navbar-toggler:focus{
+    background-color: #ec1e2b;
+}
+
 button:focus {
     outline: 0;
 }
 
 .navbar-collapse {
-    Border-top: 1px solid #ac935d;
+    Border-top: 1px dashed #ec1e2b;
     padding: 0;
     text-align: center;
 }
@@ -444,12 +449,14 @@ label {
   color: #333;
   font-weight: 700;
   border-radius: 0.2em;
+  border-color: transparent;
 }
 
 .btn-bookus:hover {
   background-color: #ec1e2b;
   color: #fafafa;
-  font-weight: 900;
+  font-weight: 700;
+  border-color: transparent;
 }
 
 /* ==================== FOOTER ===================*/
