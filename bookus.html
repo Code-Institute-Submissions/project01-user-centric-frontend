@@ -89,18 +89,19 @@
                             </div>
                             <div class="form-group">
                                 <label for="InputPhone">Phone Number</label>
-                                <input type="phone" class="form-control" id="InputPhone" aria-describedby="phoneHelp" placeholder="Enter Phone Number" required>
+                                <input type="number" class="form-control" id="InputPhone" aria-describedby="phoneHelp" placeholder="Enter Phone Number" required>
                                 <small id="phoneHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="InputEvent">Event Type</label>
-                                        <select class="form-control" placeholder="Type of Event" id="InputEvent" name="event" required>
-                                                     <option value="Wedding">Wedding</option>
-                                                      <option value="Christmas">Christmas</option>
-                                                      <option value="Corporate">Corporate</option>
-                                                </select>
+                                        <select class="form-control" id="InputEvent" name="event" required>
+                                            <option value="">Select Event Type</option>
+                                            <option value="Wedding">Wedding</option>
+                                            <option value="Christmas">Christmas</option>
+                                            <option value="Corporate">Corporate</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -148,7 +149,7 @@
 
     <!-- Bootstrap Date-Picker Plugin -->
     <!-- Bootstrap Date-Picker supplied by https://bootstrap-datepicker.readthedocs.io/ --> 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
     <!-- DataPicker script -->
