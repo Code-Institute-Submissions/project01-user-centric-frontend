@@ -63,6 +63,39 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+/*
+.news-content{
+    background: url(/assets/images/actionshot.jpg) no-repeat scroll 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}*/
+
+.news-content {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.news-content:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    background: #ec1e2b  url(/assets/images/actionshot.jpg) no-repeat scroll 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
 
 .inline-block {
     display: inline-block;
@@ -234,6 +267,19 @@ button:focus {
   float:right;
   margin: 0 0 10px 10px;
 }
+
+.news-image {
+  max-width: 40%;
+  float:right;
+  margin: 0 0 10px 10px;
+}
+
+.news-post:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .news-post,
 .aboutus-person,
 .form-elements {
@@ -479,7 +525,7 @@ label {
     padding-top: 4px;
 }
 
-.social-icons li a i {
+.social-icons li a i, .news-post i {
     width: 40px;
     height: 40px;
     padding: 12px 0;
