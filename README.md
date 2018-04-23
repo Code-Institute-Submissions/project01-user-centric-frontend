@@ -1,10 +1,10 @@
 #   Divide of Everything Website Project 2018
 
-*   Strategy Plane
-    *   Define roles and responsibilities
-    *   Project Charter
-    *   Website development Roadmap
-    *   Strategy Trade-off
+*   [Strategy Plane](#strategy)
+    *   [Define roles and responsibilities](#randr)
+    *   [Project Charter](#charter)
+    *   [Website development Roadmap](#roadmap)
+    *   [Strategy Trade-off](#trade)
 *   Scope Plane
     *   Scenarios
     *   Functional Specifications
@@ -39,6 +39,7 @@
             *   Colours
 *   External Help   
 
+<a name="strategy"></a>
 ##  Strategy Plane
 Our goal at this stage of the project is to identify what the customer aims to achieve, what their business goals are, and in turn, the reason for a website.
 
@@ -48,15 +49,15 @@ We aim to:
 *   determine the business objectives and the value of the website
 *   use this plane to determine the reason for the websites existence
 
+<a name="randr"></a>
 ### Define roles and responsibilities
 From here on **Divide of Everything** will be known as the client.
 
 For the purposes of this project, Sonya Cooley will have full authority, primary responsibility, and full accountability for all aspects of the project. 
 She will have a Mentor available to her at the beginning, middle and end of the project.
 
+<a name="charter"></a>
 ### Project Charter
-
-
 |Purpose: What purpose does the website serve?|The client website will target fans and potential fans with their back catalogue and new material.  The site will showcase their music and publicise their availability to perform at events, etc.|
 |:---|:---|
 |**Goals:** What outcomes does it need to achieve?|<ul><li>Share new music and their back catalogue with fans and potential fans. Keeping old fans happy and attracting new fans</li><li>Showcase their music</li><li>Publicise their availability to perform at events, parties, etc</li><li>Push their social media presence</li></ul>
@@ -66,6 +67,7 @@ She will have a Mentor available to her at the beginning, middle and end of the 
 |**Tactics:** What activities might help to realise the strategies?|<ul><li>Provide a user experience that is accessible and enjoyable for all visitors</li><ul><li>following conventions for design and interaction</li><li>providing clear and consistent navigation</li><li>testing usability with a wide range of users, including people with disabilities and older adults</li></ul></ul>
 
 
+<a name="roadmap"></a>
 ### Website development Roadmap
 The UXD will be driven by business goals and user needs.
 
@@ -76,8 +78,8 @@ The UXD will be driven by business goals and user needs.
 |**Develop**|Look & feel, Design and Development, Build, Version control, Testing, Deploy|
 
 
+<a name="trade"></a>
 ### Strategy Trade-off
-
 |Opportunity/Problem|Importance|Viability/Feasibility|
 |:---|:---|:---|
 |Create Online Presence|5|5|
