@@ -14,9 +14,59 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="icon" href="assets/images/logo_redtransparent.png">
     <title>Divide of Everything | News & Gigs </title>
+    <style type="text/css">
+        .parallax {
+            /* The image used */
+            background-image: url('assets/images/gabriel-singing.jpg');
+
+            /* Full height */
+            height: 40%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax1 {
+            /* The image used */
+            background-image: url('assets/images/band_bw.jpg');
+            
+            /* Full height */
+            height: 40%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax2 {
+            /* The image used */
+            background-image: url('assets/images/band_duotone.jpg');
+
+            /* Full height */
+            height: 40%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #body-news {
+            background-color: #191008;
+        }
+        .news-image {
+            max-width: 30%;
+        }
+    </style>
 </head>
 
-<body>
+<body id="body-news">
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-md navbar-light">
         <div class="container-fluid">
@@ -51,44 +101,39 @@
     </nav>
 
     <!-- Content -->
-    <div id="img-wrapper-news">
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="news-post-container">
-                        <div class="news-post">
-                            <p class="text-uppercase news-post-date">April 03 2018</p>
-                            <h1 class="text-uppercase">The Workmans Club - tonight at 8pm</h1>
-                            <p class="news-post-text">Tonight we're gonna play our first acoustic performance in front of a live audience at Workman's at around 8pm - should be good fun! Pop in if you're in town
-                            </p>
-                            <p><a href="#" title="Read more">Read more...</a></p>
-                        </div>
-                    </div>
-                    <div class="news-post-container">
-                        <div class="news-post">
-                            <p class="text-uppercase news-post-date">March 29 2018</p>
-                            <h1 class="text-uppercase">Gravity - Single available on Apple Music</h1>
-                            <p class="news-post-text"><img src="assets/images/news.jpg" alt=">Gravity single available on Apple Music" class="news-image">Re-released single Gravity.</p>
-                            <p class="news-post-text">We decided to take it down and change distribution platform. More singles will be available very soon.
-                            </p>
-                            <p><a href="https://itunes.apple.com/ie/album/gravity-single/id1226171914" title="Read more">Get the single on Apple Music...</a></p>
-                        </div>
-                    </div>
-                    <div class="news-post-container">
-                        <div class="news-post">
-                            <p class="text-uppercase news-post-date">March 10 2018</p>
-                            <h1 class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ipsa!</h1>
-                            <p class="news-post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facilis vero repellendus quia velit perferendis quae recusandae illum quod veritatis, ipsa eos eveniet. Cumque, officiis porro harum! Magnam, inventore, earum! Omnis
-                                tempora corrupti dolorum ducimus maxime molestiae, fugiat repudiandae, rerum nisi iste modi.</p>
-                            <p class="news-post-text">Veniam natus, tempore sapiente rem soluta excepturi velit obcaecati eveniet voluptatibus, sint saepe magni, iste explicabo, dolorem optio. Debitis tenetur magnam quasi ut ipsum. Ea dolore ipsa enim porro dolores alias ut, perspiciatis
-                                natus provident. Distinctio optio, aut ratione dolore voluptate vero. Quod excepturi perferendis eos ullam, nulla mollitia corporis blanditiis ipsum voluptatum, dolorem quia saepe repellat.
-                            </p>
-                            <p><a href="#" title="Read more">Read more...</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="parallax"></div>
+    <div class="news-post-container">
+        <div class="news-post">
+            <p class="text-uppercase news-post-date">April 03 2018</p>
+            <h1 class="text-uppercase">The Workmans Club - tonight at 8pm</h1>
+            <p class="news-post-text">Tonight we're gonna play our first acoustic performance in front of a live audience at Workman's at around 8pm - should be good fun! Pop in if you're in town
+            </p>
+            <p><a href="#" title="Read more">Read more...</a></p>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+    <div class="news-post-container">
+        <div class="news-post">
+            <p class="text-uppercase news-post-date">March 29 2018</p>
+            <h1 class="text-uppercase">Gravity - Single available on Apple Music</h1>
+            <p class="news-post-text"><img src="assets/images/news.jpg" alt=">Gravity single available on Apple Music" class="news-image">Re-released single Gravity.</p>
+            <p class="news-post-text">We decided to take it down and change distribution platform. More singles will be available very soon.
+            </p>
+            <p><a href="https://itunes.apple.com/ie/album/gravity-single/id1226171914" title="Read more">Get the single on Apple Music...</a></p>
+        </div>
+    </div>
+    <div class="parallax2"></div>
+    <div class="news-post-container">
+        <div class="news-post">
+            <p class="text-uppercase news-post-date">March 10 2018</p>
+            <h1 class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ipsa!</h1>
+            <p class="news-post-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facilis vero repellendus quia velit perferendis quae recusandae illum quod veritatis, ipsa eos eveniet. Cumque, officiis porro harum! Magnam, inventore, earum! Omnis tempora corrupti
+                dolorum ducimus maxime molestiae, fugiat repudiandae, rerum nisi iste modi.</p>
+            <p class="news-post-text">Veniam natus, tempore sapiente rem soluta excepturi velit obcaecati eveniet voluptatibus, sint saepe magni, iste explicabo, dolorem optio. Debitis tenetur magnam quasi ut ipsum. Ea dolore ipsa enim porro dolores alias ut, perspiciatis natus
+                provident. Distinctio optio, aut ratione dolore voluptate vero. Quod excepturi perferendis eos ullam, nulla mollitia corporis blanditiis ipsum voluptatum, dolorem quia saepe repellat.
+            </p>
+            <p><a href="#" title="Read more">Read more...</a></p>
+        </div>
     </div>
     <!-- Footer -->
     <footer class="container-fluid footer-content">

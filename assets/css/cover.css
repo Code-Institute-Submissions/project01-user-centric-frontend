@@ -122,6 +122,8 @@ body {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
   background-color: rgba(25, 16, 8, 0.9);
+  border-top-left-radius:  1.0em;
+  border-top-right-radius: 1.0em;
 }
 
 .copyright-text {

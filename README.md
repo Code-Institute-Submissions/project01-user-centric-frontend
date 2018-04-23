@@ -235,7 +235,7 @@ During development:
 <a name="html"></a>
 ####    Basic HTML Structure
 #####   Header
-![Header](md-images/header.png)
+![Header](md-images/banner.png)
 
 #####   Footer
 ![Footer](md-images/footer.png)
