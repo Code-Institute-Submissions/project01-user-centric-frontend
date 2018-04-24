@@ -285,6 +285,9 @@ button:focus {
   display: table;
   clear: both;
 }
+.news-word {
+  float:right;
+}
 
 .news-post,
 .aboutus-person,
