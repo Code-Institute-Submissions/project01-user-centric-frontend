@@ -277,7 +277,7 @@ During development:
 |Home Page|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
 |Content Display|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling
 |Navigation, hover, etc|Not Applicable|Not Applicable|Passed|Not Applicable|Not Applicable|Not Applicable|Not Applicable|Passed|
-|Responsive Navigation|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable
+|Responsive Navigation|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable|Button jumps down passed the logo onto a new line|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable
 |Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
 |Book us Form|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|
 
