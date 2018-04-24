@@ -1,5 +1,6 @@
-#   Divide of Everything Website Project 2018
 
+#   Divide of Everything Website Project 2018
+<a href="topofpage"></a>
 *   [Strategy Plane](#strategy)
     *   [Define roles and responsibilities](#randr)
     *   [Project Charter](#charter)
@@ -24,7 +25,7 @@
     *   [Development Phase](#dev)
         *   [IDE](#ide)
         *   [Version Control](#version)
-        *   [Readme](#readme)
+        *   [Readme](#readmeheader)
         *   [Testing](#testing)
         *   [HTML/CSS Structure](#html)
             *   Header
@@ -59,7 +60,7 @@ For the purposes of this project, Sonya Cooley will have full authority, primary
 She will have a Mentor available to her at the beginning, middle and end of the project.
 
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="charter"></a>
 ### Project Charter
 ||Objectives |
@@ -71,7 +72,7 @@ She will have a Mentor available to her at the beginning, middle and end of the 
 |**Strategies:** What approaches will help to realise the goals?|<ul><li>We will take a mobile first approach to content.</li><li>Focus content at our target audience</li><li>Aim to keep the site simple and not over complicated</li></ul>
 |**Tactics:** What activities might help to realise the strategies?|<ul><li>Provide a user experience that is accessible and enjoyable for all visitors</li><ul><li>following conventions and industry standards for design and interaction</li><li>providing clear and consistent navigation</li><li>testing usability with a wide range of clients and industry standard tools</li></ul></ul>
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="roadmap"></a>
 ### Website development Roadmap
 The UXD will be driven by business goals and user needs.
@@ -81,7 +82,7 @@ The UXD will be driven by business goals and user needs.
 |**Develop**|Look & feel, Design and Development, Build, Version control, Testing, Deploy|
 
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="trade"></a>
 ### Strategy Trade-off
 |Opportunity/Problem|Importance|Viability/Feasibility|
@@ -96,7 +97,7 @@ The UXD will be driven by business goals and user needs.
 |:---|:---|
 |![Trade off graph](md-images/graph.png)|Feasible for initial release <ul><li>Create Online Presence</li><li>Increase fan numbers</li><li>Showcase music</li><li>Increase bookings</li></ul>Features for future releases<ul><li>Complete catalogue online</li></ul>
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="scope"></a>
 ##  Scope Plane
 Our project scope will be based on our defined Strategy. We will;
@@ -131,7 +132,7 @@ The site will provide the ability to;
 
 The site will be optimised for latest version of Chrome, Firefox, Internet Explorer, Safari and Opera and optimised for mobile usage. HTML and CSS will be written using the Mobile-First approach. The mobile-first approach is designing for the smallest screen and working your way up to desktop screens.
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="content"></a>
 ###    Content Requirements
 Most screens/pages will follow a standard format, with a look and feel to be designed by a graphic designer. Each page will have a content area between a consistent header and footer.
@@ -164,7 +165,7 @@ Content for the site will be provided by the client.
 |Logo|Takes user to home page|
 
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="sands"></a>
 ##  Structure & Skeleton Plane
 Our goal for the Structure plane is to organise the information architecture and interactions for the site. We will keep a consistent, predictable, learnable interface, and, interactions. We will use industry standard technologies to implement expected behaviours when using the site, e.g. tooltips, navigation, including accessibility, etc.
@@ -193,7 +194,7 @@ The website will implement content in a standard tree structure. It will go to o
 |![directory structure](md-images/dirstructure.png)|At the root of the site:<ul><li>Index.html</li><li>Aboutus.html</li><li>Catalogue.html</li><li>News.html</li><li>Bookus.html</li></ul>Assets Directory<ul><li>CSS sub-directory</li><li>Images sub-directory</li><li>Videos sub-directory</li><li>Audio sub-directory</li></ul>|
 |:---|:---|
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="wireframes"></a>
 ##  Wireframes
 ### Index Home Page
@@ -207,7 +208,7 @@ The website will implement content in a standard tree structure. It will go to o
 ### Booking Enquiry Page
 ![Book us Page wireframe](md-images/BookUsPage.png)
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="surface"></a>
 ##  Surface Plane
 
@@ -232,7 +233,7 @@ For example; after the header was completed, after the footer was completed and 
 
 __A full Git log can be provided on request.__
 
-<a name="readme"></a>
+<a name="readmeheader"></a>
 ####    Readme
 A Readme markdown file is provided with the site on GitHub. It explains what the project does and the need that it fulfils. 
 It also describes the functionality of the site, as well as the technologies used. 
@@ -240,7 +241,7 @@ The Readme provides information on how the site was deployed and tested and if s
 
 A PDF version of the Readme is also provided: https://sonnerz.github.io/project01-user-centric-frontend/readme.pdf
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="testing"></a>
 ####    Testing
 The website was tested on an ongoing basis. Chrome and Chrome Developer Tools were the primary browser and tool used for testing. 
@@ -327,7 +328,7 @@ During development:
 
 
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="html"></a>
 ####    HTML/CSS Structure
 #####   Header
@@ -390,7 +391,7 @@ Google fonts: Raleway with sans serif as backup
 |#191008|rgba(25, 16, 8)|Dark Brown|
 |#ac935d|rgba(172, 147, 93)|Light Brown|
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 <a name="deployment"></a>
 ### Deployment
 GitHub is used to host the code and publish the pages.
@@ -417,7 +418,7 @@ Under the Settings – GitHub Pages of the new repository, the master branch of 
 
 https://sonnerz.github.io/project01-user-centric-frontend/
 
-<a href="#">Top of page</a>
+<a href="topofpage">Top of page</a>
 
 <a name="external"></a>
 ## External Help
