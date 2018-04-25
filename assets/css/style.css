@@ -22,6 +22,61 @@ body {
   /*#dfd4be;*/
 }
 
+
+.float-icons {
+  position: fixed;
+  top: 350px;
+  font-size: 2em;
+  padding: 0px;
+  margin: 0px;
+  right: 0;
+  width: 40px;
+  z-index: 1100;
+}
+
+.float-icons ul {
+  list-style-type:none;
+  color:#efefef;
+  height:40px;
+  padding:0px;
+  margin:0px 0px 1px 0px;
+}
+
+.float-icons li {
+    list-style-type:none;
+    background-color:#191008;
+    color:#efefef;
+    height:40px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+    border-radius: 0;
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+
+.float-icons i {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  font-size: 25px;
+  text-align: center;
+  color: #ac935d;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.float-icons li:hover{
+    margin-left:-50px;
+    background-color: #ec1e2b;
+}
+
 /* ==================== WRAPPERS AND BACKGROUNDS ============== */
 
 .tracks-wrapper,
@@ -69,7 +124,7 @@ body {
 
 #img-wrapper-bookus::after {
   content: "";
-  background: #ec1e2b url(../../assets/images/gabriel-singing.jpg) no-repeat scroll -50px 0px;
+  background: #ec1e2b url(../../assets/images/gabriel-singing.jpg) no-repeat scroll -280px 0px;
   opacity: 0.8;
   top: 0;
   left: 0;
@@ -540,7 +595,6 @@ label {
 .footer-content {
   background-color: #191008;
   min-height: 50px;
-  padding: 0;
   margin: 0;
   border-top: 1px solid #ec1e2b;
 }
