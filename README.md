@@ -27,6 +27,9 @@
         *   [Version Control](#version)
         *   [Readme](#readmeheader)
         *   [Testing](#testing)
+            *   Initial Testing
+            *   Usability Testing
+            *   Final Testing
         *   [HTML/CSS Structure](#html)
             *   Header
             *   Footer
@@ -246,17 +249,15 @@ A PDF version of the Readme is also provided: https://sonnerz.github.io/project0
 The website was tested on an ongoing basis. Chrome and Chrome Developer Tools were the primary browser and tool used for testing. 
 However, the site was also tested using Firefox and Internet Explorer.
 
-HTML was validated using the Markup Validation Service provided by The World Wide Web Consortium (W3C): https://validator.w3.org/
+*   HTML was validated using the Markup Validation Service provided by The World Wide Web Consortium (W3C): https://validator.w3.org/
 
-CSS was validated using the CSS Validation Service provided by The World Wide Web Consortium (W3C): https://jigsaw.w3.org/css-validator/
-
-Each page was audited using Chrome Dev Tools.
+*   CSS was validated using the CSS Validation Service provided by The World Wide Web Consortium (W3C): https://jigsaw.w3.org/css-validator/
 
 During development:
 *   The Body background colour had different colours for each media query to ensure the @media queries were being adapted by the browser.
 *   Div’s had vibrant background colours so that the developer was easily able to identify them
-*   Each change was viewed in a chrome browser and tested using developer tools at full width resolution and using device emulators.
-*   Remote debugging using Android, Windows and Dev Tools were used to test each new functionality and updated page.
+*   Each change was viewed in a chrome browser and tested using developer tools at full width resolution and using a variety of device emulators; Galaxy SIII, Galaxy 5, Laptop touch screen, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad.
+*   Remote debugging using Android, Windows OS and Chrome Dev Tools were used to test each new functionality and new/updated page.
 *   Each page was audited using Chrome Dev Tools Audit functionality
   
 **PLEASE NOTE: Many of the issues highlighted by the Audit can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project.**
@@ -291,11 +292,17 @@ During development:
 |News|79|100|88|89
 |Books us|77|100|88|89
 
+------- 
+
+####    Usability Testing
+During usability testing, it was found that the user had difficulty deciding what to do on the home page. 
+As a result, an ‘Enter Site’ link was added to allow the user to navigate straight to the Catalogue page from the home page. 
+A band logo was added to the global navigation bar in the mobile view to attract the user to the button navigation.
     
 -------    
     
 
-####   End Testing
+####   Final Testing
 |Browser/Test|Chrome|Firefox|IE|Chrome Android-Remote Debugging|
 |:---|:---:|:---:|:---:|:---:|
 |Home Page|Passed|Passed|Passed|Passed|

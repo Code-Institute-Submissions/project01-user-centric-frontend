@@ -55,7 +55,13 @@ body {
 
 .navbar>.container,
 .navbar>.container-fluid {
-  justify-content: flex-end;
+  /*justify-content: flex-end;*/
+}
+
+.navbar-header img {
+  width: 160px;
+  max-width: 200px;
+  padding-top: 0.8rem;
 }
 
 @media (min-width: 48em) {
@@ -65,6 +71,13 @@ body {
   .nav-masthead {
     float: right;
   }
+}
+
+@media (min-width: 768px) {
+  .navbar-header {
+    display: none;
+  }
+  
 }
 
 
@@ -96,6 +109,17 @@ body {
   background-color: #ec1e2b;
   padding: 2.5rem 1.5rem;
   border-radius: 0.5em;
+}
+
+.entersite-text a{
+  font-size: 0.5em;
+  color: #fafafa;
+}
+
+.entersite-text a:hover{
+  font-size: 0.5em;
+  color: #191008;
+  text-decoration: none;
 }
 
 .divide-cover-textbox {
