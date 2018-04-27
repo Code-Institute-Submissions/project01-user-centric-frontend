@@ -25,7 +25,7 @@ body {
 
 .float-icons {
   position: fixed;
-  top: 350px;
+  top: 275px;
   font-size: 2em;
   padding: 0px;
   margin: 0px;
@@ -77,12 +77,45 @@ body {
     background-color: #ec1e2b;
 }
 
+.float-icons a:hover{
+    padding-right: 50px;
+    background-color: transparent;
+}
+
+.back-to-top {
+  background-color: #fafafa;
+}
+
+.back-to-top a{
+  background-color: #fafafa;
+  text-decoration: none;
+  color: #191008;
+  margin-top:20px;
+  font-weight: 700;
+  padding: 0 10px 0 20px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.back-to-top a:hover {
+  background-color: #ec1e2b;
+  color: #fafafa;
+}
+.backtotop-anchor {
+  display: block;
+  height: 100px; 
+  margin-top: -100px; 
+  visibility: hidden;
+}
 /* ==================== WRAPPERS AND BACKGROUNDS ============== */
 
 .tracks-wrapper,
 .audio-wrapper {
   background-color: #ec1e2b;
   color: #fff;
+  padding-bottom: 50px;
 }
 
 .videos-wrapper,
@@ -432,19 +465,10 @@ button:focus {
 
 /* ==================== CATALOGUE ===================*/
 
-.catalogue-container {
-  padding: 0 0 50px 0;
-}
-
 .container row,
 .container col {
   padding: 0;
   margin: 0;
-}
-
-.catalogue-content {
-  padding-top: 30px;
-  padding-bottom: 100px;
 }
 
 .section-header {
@@ -457,6 +481,13 @@ button:focus {
 .section-header h1 {
   margin: 0;
   font-weight: 800;
+}
+
+#section-header-anchor {
+  display: block;
+  height: 100px; 
+  margin-top: -100px; 
+  visibility: hidden;
 }
 
 .album-tracklist {
@@ -540,6 +571,7 @@ button:focus {
 
 audio {
   background-color: #fafafa;
+  width: 15em;
 }
 
 audio::-webkit-media-controls-panel {
@@ -603,10 +635,11 @@ label {
   padding: 0;
   margin: 0;
   display: inline-block;
+  padding-top: 4px;
 }
 
-.footer-icons>ul {
-  padding-top: 4px;
+.footer-icons>ul>li, .footer-icons>ul>li.list-inline-item:not(:last-child) {
+  margin-right: 0;
 }
 
 .social-icons li a i,
@@ -653,7 +686,7 @@ footer p {
   ul.navbar-nav {
     margin-left: 10px;
   }
-  .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .nav-link:hover {
     background-color: #3a2e15;
   }
   .navbar-header {
@@ -692,11 +725,12 @@ footer p {
   .navbar-collapse {
     Border-top: 0px;
   }
-  .navbar-light .navbar-nav .nav-link.active,
-  .navbar-light .navbar-nav .nav-link:focus,
-  .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
     background-color: transparent;
   }
+  
   .navbar-header {
     margin-left: 20px;
     padding-top: 10px;
@@ -725,9 +759,9 @@ footer p {
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-  .navbar-light .navbar-nav .nav-link.active,
-  .navbar-light .navbar-nav .nav-link:focus,
-  .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
     background-color: transparent;
   }
   .navbar-header {
@@ -749,9 +783,9 @@ footer p {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-  .navbar-light .navbar-nav .nav-link.active,
-  .navbar-light .navbar-nav .nav-link:focus,
-  .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
     background-color: transparent;
   }
   p.person-text-sociallinks {

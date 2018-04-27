@@ -109,17 +109,7 @@ body {
   background-color: #ec1e2b;
   padding: 2.5rem 1.5rem;
   border-radius: 0.5em;
-}
-
-.entersite-text a{
-  font-size: 0.5em;
-  color: #fafafa;
-}
-
-.entersite-text a:hover{
-  font-size: 0.5em;
-  color: #191008;
-  text-decoration: none;
+  white-space: nowrap;  
 }
 
 .divide-cover-textbox {
@@ -131,12 +121,27 @@ body {
   margin: 0 auto;
 }
 
+.divide-cover-textbox a{
+  color: #fafafa;
+}
+
+.divide-cover-textbox a:hover{
+  color: #191008;
+  text-decoration: none;
+}
+
 .list-inline .list-inline-item {
   margin-right: 0;
 }
 
 .lead {
   font-size: 1.2em;
+}
+
+.fa {
+  vertical-align: text-top;
+  padding-right: 5px;
+  font-size: 0.9em;
 }
 
 /*
@@ -162,7 +167,7 @@ body {
 
 @media (min-width: 28em) {
   .cover-heading {
-    font-size: 3.5rem;
+    font-size: 2.25rem;
   }
   .divide-cover-textbox {
     font-size: 1.5rem;

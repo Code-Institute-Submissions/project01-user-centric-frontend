@@ -260,7 +260,6 @@ During development:
 *   Remote debugging using Android, Windows OS and Chrome Dev Tools were used to test each new functionality and new/updated page.
 *   Each page was audited using Chrome Dev Tools Audit functionality
   
-**PLEASE NOTE: Many of the issues highlighted by the Audit can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project.**
 
 #####   Initial Testing
 |Browser/Test|Chrome|Firefox|IE|Chrome Android-Remote Debugging|
@@ -281,6 +280,8 @@ During development:
 |Responsive Navigation|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable|Button jumps down passed the logo onto a new line|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable
 |Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
 |Book us Form|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|
+
+**PLEASE NOTE:Many of the issues highlighted by the page Audits can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project, for example the Catalogue page performance values.**
 
 #####   Audit
 
@@ -322,13 +323,15 @@ A band logo was added to the global navigation bar in the mobile view to attract
 |Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
 |Book us Form|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
 
+**PLEASE NOTE:Many of the issues highlighted by the page Audits can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project, for example the Catalogue page performance values.**
+
 #####   Audit
 
 |Page/Criteria|Performance|Accessibility|Best Practices|SEO
 |:---|:---:|:---:|:---:|:---:|
 |Home|91|100|94|78
 |About us|73|92|88|100
-|Catalogue|3|93|75|89
+|Catalogue|03|93|75|89
 |News|85|92|88|100
 |Books us|11|92|88|89
 
