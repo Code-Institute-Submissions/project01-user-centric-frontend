@@ -1,6 +1,43 @@
-<a name="topofpage"></a>
+
 #   Divide of Everything Website Project 2018
 
+##  Final site address: 
+https://sonnerz.github.io/project01-user-centric-frontend/ 
+
+**Create a website for a band.**
+
+Build a static (front-end only) website for a band. As a starting point, you may want to use wireframes, as we did in the UX lesson (you can use Balsamiq or any other tool, including just pen and paper). You can use either your assets or the assets within the following GitHub repo.
+
+
+## Guidelines and Guideline fulfilment
+
+1.	**Create a website of around 4-5 pages, or (if using a single scrolling page) these should be separate page areas.**<br>
+I've created a website containing 5 pages.
+2.	**Incorporate main navigation and grid layout (you might want to use Flexbox or Bootstrap to accomplish this).**<br>
+Bootstrap 4 was used to build the HTML structure and site functionality such as the main navigation.
+3.	**Whenever possible, strive to use semantic HTML5 elements to structure your HTML code better.**<br>
+Semantic HTML5 elements were used in every page to structure the html.
+4.	**Make sure your site is as responsive as possible. You can test this by checking the website on different screen sizes and browsers.**<br>
+The site has been built to be as responsive. Please see the [Testing](#testing) section for further details.
+5.	**We advise that you write down user stories and create wireframes/mock-ups before embarking on full-blown development.**<br>
+User stories and wireframes are provided in the [Scenarios](#scenarios) section and the [Wireframes](#wireframes) section.
+6.	**The site can also make use of CSS frameworks such as Bootstrap, just make sure you maintain a clear separation between the library code and your code.**<br>
+Bootstrap 4 was used to build the HTML structure. Custom styles were created - style.css and cover.css files can be found in the assets/css directory.
+7.	**You should conduct and document tests to ensure that all of your website’s functionality works well.**<br>
+Testing was under taken and recorded in the [Testing](#testing) section below
+8.	**Write a README.md file for your project that explains what the project does and the need that it fulfils. It should also describe the functionality of the project, as well as the technologies used. Detail how the project was deployed and tested and if some of the work was based on other code, explain what was kept and how it was changed to fit your need. A project submitted without a README.md file will FAIL.**<br>
+ReadMe.md file provided.
+9.	**Use Git & GitHub for version control. Each new piece of functionality should be in a separate commit.**<br>
+Git was used for version control and my logs clearly show that a commit was made after each new piece of functionality. See [Version Control](#version) section below.
+10.	**Deploy the final version of your code to a hosting platform such as GitHub Pages.**<br>
+GitHub Pages was used to host the final website. See [Deployment](#deployment) section below.
+
+<hr><hr>
+<a name="topofpage"></a>
+
+# Table of Contents
+
+*   [Overview](#overview)
 *   [Strategy Plane](#strategy)
     *   [Define roles and responsibilities](#randr)
     *   [Project Charter](#charter)
@@ -15,6 +52,7 @@
 *   [Structure & Skeleton Plane](#sands)
     *   [Interaction design](#design)
     *   [Information architecture](#architecture)
+    *   [Features](#feat)
 *   [Wireframes](#wireframes)
     *   Index - Home Page
     *   About Us Page
@@ -26,11 +64,7 @@
         *   [IDE](#ide)
         *   [Version Control](#version)
         *   [Readme](#readmeheader)
-        *   [Testing](#testing)
-            *   Initial Testing
-            *   Usability Testing
-            *   Final Testing
-        *   [HTML/CSS Structure](#html)
+        *   [Features - HTML/CSS Structure](#html)
             *   Header
             *   Footer
             *   Index Page
@@ -41,9 +75,25 @@
             *   CSS
             *   Typography
             *   Colours
-        *   [Deployment](#deployment)
-*  [External Help](#external)
+    *   [Testing](#testing)
+        *   [Initial Testing](#ini)
+        *   [Usability Testing](#use)
+        *   [Final Testing](#fin)
+    *   [Deployment](#deployment)
+*  [Credits](#credits)
  
+<a name="overview"></a>
+##  Overview
+I have decided to stay with the suggested theme of the website - a music band. However, I have chosen to use a defunct contemporary Irish band instead. 
+I chose 'Divide of Everything' because I know one of the band members, but also because they do not have their own website.
+They have their own identity, a logo and a clearly unique style and brand. Finding content for the site was not going to be a big challenge which gave me more time
+to spend on the HTML and CSS.
+
+This document follows the Five Planes of the user experience, from Strategy through to Surface. The Surface plane is the most comprehensive section where the development
+process has been clearly described.
+
+
+
 
 <a name="strategy"></a>
 ##  Strategy Plane
@@ -196,6 +246,21 @@ The website will implement content in a standard tree structure. It will go to o
 |![directory structure](md-images/dirstructure.png)|At the root of the site:<ul><li>Index.html</li><li>Aboutus.html</li><li>Catalogue.html</li><li>News.html</li><li>Bookus.html</li></ul>Assets Directory<ul><li>CSS sub-directory</li><li>Images sub-directory</li><li>Videos sub-directory</li><li>Audio sub-directory</li></ul>|
 |:---|:---|
 
+<a name="feat"></a>
+### Features
+*   Each page has a content area bookended by a header and footer
+*   The sticky header on every page is always available to the site visitor even as they scroll, and contains the band logo and responsive navigation
+*   The footer on every page has links to the bands social media sites - Facebook, Twitter and Youtube
+*   Permanent and fixed links to Facebook, Twitter and Youtube can be found along the right hand side of all pages on the website. These are available to the site visitor even as they scroll.
+*   The Catalogue Page makes band tracks and videos available to the site visitor
+*   A contact form is available to site visitors to make contact with the band for the purposes of booking them for events
+*   A news page keeps band fans up-to-date with band news and gig news
+   
+#### Future Features
+*   An online chat forum could potentially be added in the future
+*   An option to purchase band merchandise could also be a future feature
+
+
 [Top of page](#topofpage)
 <a name="wireframes"></a>
 ##  Wireframes
@@ -233,7 +298,7 @@ Project files were committed to Git after each major functional addition, new pa
 Following the initial commit to Git, each major update was followed by a Git add and commit. 
 For example; after the header was completed, after the footer was completed and after each page was completed
 
-__A full Git log can be provided on request.__
+__A full Git log is available on my GitHub repository.__
 
 <a name="readmeheader"></a>
 ####    Readme
@@ -241,105 +306,11 @@ A Readme markdown file is provided with the site on GitHub. It explains what the
 It also describes the functionality of the site, as well as the technologies used. 
 The Readme provides information on how the site was deployed and tested and if some of the work was based on other code.
 
-A PDF version of the Readme is also provided: https://sonnerz.github.io/project01-user-centric-frontend/readme.pdf
-
-[Top of page](#topofpage)
-<a name="testing"></a>
-####    Testing
-The website was tested on an ongoing basis. Chrome and Chrome Developer Tools were the primary browser and tool used for testing. 
-However, the site was also tested using Firefox and Internet Explorer.
-
-*   HTML was validated using the Markup Validation Service provided by The World Wide Web Consortium (W3C): https://validator.w3.org/
-
-*   CSS was validated using the CSS Validation Service provided by The World Wide Web Consortium (W3C): https://jigsaw.w3.org/css-validator/
-
-During development:
-*   The Body background colour had different colours for each media query to ensure the @media queries were being adapted by the browser.
-*   Div’s had vibrant background colours so that the developer was easily able to identify them
-*   Each change was viewed in a chrome browser and tested using developer tools at full width resolution and using a variety of device emulators; Galaxy SIII, Galaxy 5, Laptop touch screen, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad.
-*   Remote debugging using Android, Windows OS and Chrome Dev Tools were used to test each new functionality and new/updated page.
-*   Each page was audited using Chrome Dev Tools Audit functionality
-  
-
-#####   Initial Testing
-|Browser/Test|Chrome|Firefox|IE|Chrome Android-Remote Debugging|
-|:---|:---:|:---:|:---:|:---:|
-|Home Page|Passed|Passed|Passed|Passed|
-|Content Display|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|
-|Navigation, hover, etc|Passed|Passed|Passed|Passed|
-|Responsive Navigation|Passed|Passed|Passed|Too close to left, needs to be centred. Needs hover background
-|Styling|Passed|Passed|Passed|Passed|
-|Book us Form|Form too long, prefer one screen length|Form too long, prefer one screen length|Form too long, prefer one screen length|Two column fields need to be one column|
-
-
-|Device/Test|Galaxy SIII|Galaxy 5|Laptop touch screen|iPhone 5/SE|iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X|iPad|
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Home Page|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
-|Content Display|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling
-|Navigation, hover, etc|Not Applicable|Not Applicable|Passed|Not Applicable|Not Applicable|Not Applicable|Not Applicable|Passed|
-|Responsive Navigation|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable|Button jumps down passed the logo onto a new line|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable
-|Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
-|Book us Form|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|
-
-**PLEASE NOTE:Many of the issues highlighted by the page Audits can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project, for example the Catalogue page performance values.**
-
-#####   Audit
-
-|Page/Criteria|Performance|Accessibility|Best Practices|SEO
-|:---|:---:|:---:|:---:|:---:|
-|Home|93|91|88|78
-|About us|73|82|88|100
-|Catalogue|28|93|75|89
-|News|79|100|88|89
-|Books us|77|100|88|89
-
-------- 
-
-####    Usability Testing
-During usability testing, it was found that the user had difficulty deciding what to do on the home page. 
-As a result, an ‘Enter Site’ link was added to allow the user to navigate straight to the Catalogue page from the home page. 
-A band logo was added to the global navigation bar in the mobile view to attract the user to the button navigation.
-    
--------    
-    
-
-####   Final Testing
-|Browser/Test|Chrome|Firefox|IE|Chrome Android-Remote Debugging|
-|:---|:---:|:---:|:---:|:---:|
-|Home Page|Passed|Passed|Passed|Passed|
-|Content Display|Passed|Passed|Passed|Passed|
-|Navigation, hover, etc|Passed|Passed|Passed|Passed|
-|Responsive Navigation|Passed|Passed|Passed|Passed
-|Styling|Passed|Passed|Passed|Passed|
-|Book us Form|Passed|Passed|Passed|Passed
-
-
-|Device/Test|Galaxy SIII|Galaxy 5|Laptop touch screen|iPhone 5/SE|iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X|iPad|
-|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Home Page|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
-|Content Display|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
-|Navigation, hover, etc|Not Applicable|Not Applicable|Passed|Not Applicable|Not Applicable|Not Applicable|Not Applicable|Passed|
-|Responsive Navigation|Passed|Passed|Not Applicable|Passed|Passed|Passed|Passed|Not Applicable
-|Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
-|Book us Form|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
-
-**PLEASE NOTE:Many of the issues highlighted by the page Audits can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project, for example the Catalogue page performance values.**
-
-#####   Audit
-
-|Page/Criteria|Performance|Accessibility|Best Practices|SEO
-|:---|:---:|:---:|:---:|:---:|
-|Home|91|100|94|78
-|About us|73|92|88|100
-|Catalogue|03|93|75|89
-|News|85|92|88|100
-|Books us|11|92|88|89
-
 
 
 [Top of page](#topofpage)
 <a name="html"></a>
-####    HTML/CSS Structure
+####    Features - HTML/CSS Structure
 #####   Header
 ![Header](md-images/banner.png)
 The header was developed/designed to be full width and contain the client logo and global navigation. The navigation is responsive to the type of client a user is using to view the site.
@@ -400,6 +371,104 @@ Google fonts: Raleway with sans serif as backup
 |#191008|rgba(25, 16, 8)|Dark Brown|
 |#ac935d|rgba(172, 147, 93)|Light Brown|
 
+
+[Top of page](#topofpage)
+<a name="testing"></a>
+###    Testing
+The website was tested on an ongoing basis. Chrome and Chrome Developer Tools were the primary browser and tool used for testing. 
+However, the site was also tested using Firefox and Internet Explorer.
+
+*   HTML was validated using the Markup Validation Service provided by The World Wide Web Consortium (W3C): https://validator.w3.org/
+
+*   CSS was validated using the CSS Validation Service provided by The World Wide Web Consortium (W3C): https://jigsaw.w3.org/css-validator/
+
+During development:
+*   The Body background colour had different colours for each media query to ensure the @media queries were being adapted by the browser.
+*   Div’s had vibrant background colours so that the developer was easily able to identify them
+*   Each change was viewed in a chrome browser and tested using developer tools at full width resolution and using a variety of device emulators; Galaxy SIII, Galaxy 5, Laptop touch screen, iPhone 5/SE, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, iPad.
+*   Remote debugging using Android, Windows OS and Chrome Dev Tools were used to test each new functionality and new/updated page.
+*   Each page was audited using Chrome Dev Tools Audit functionality
+
+[Top of page](#topofpage)  
+<a name="ini"></a>
+####   Initial Testing
+|Browser/Test|Chrome|Firefox|IE|Chrome Android-Remote Debugging|
+|:---|:---:|:---:|:---:|:---:|
+|Home Page|Passed|Passed|Passed|Passed|
+|Content Display|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|
+|Navigation, hover, etc|Passed|Passed|Passed|Passed|
+|Responsive Navigation|Passed|Passed|Passed|Too close to left, needs to be centred. Needs hover background
+|Styling|Passed|Passed|Passed|Passed|
+|Book us Form|Form too long, prefer one screen length|Form too long, prefer one screen length|Form too long, prefer one screen length|Two column fields need to be one column|
+
+
+|Device/Test|Galaxy SIII|Galaxy 5|Laptop touch screen|iPhone 5/SE|iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X|iPad|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Home Page|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
+|Content Display|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling|Background image not scaling
+|Navigation, hover, etc|Not Applicable|Not Applicable|Passed|Not Applicable|Not Applicable|Not Applicable|Not Applicable|Passed|
+|Responsive Navigation|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable|Button jumps down passed the logo onto a new line|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Too close to left, needs to be centred. Needs hover background|Not Applicable
+|Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
+|Book us Form|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Two column fields need to be one column|Form too long, prefer one screen length|
+
+**PLEASE NOTE:Many of the issues highlighted by the page Audits can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project, for example the Catalogue page performance values.**
+
+#####   Audit
+
+|Page/Criteria|Performance|Accessibility|Best Practices|SEO
+|:---|:---:|:---:|:---:|:---:|
+|Home|93|91|88|78
+|About us|73|82|88|100
+|Catalogue|28|93|75|89
+|News|79|100|88|89
+|Books us|77|100|88|89
+
+------- 
+
+[Top of page](#topofpage)  
+<a name="use"></a>
+####    Usability Testing
+During usability testing, it was found that the user had difficulty deciding what to do on the home page. 
+As a result, an ‘Enter Site’ link was added to allow the user to navigate straight to the Catalogue page from the home page. 
+A band logo was added to the global navigation bar in the mobile view to attract the user to the button navigation.
+    
+-------    
+    
+[Top of page](#topofpage)  
+<a name="fin"></a>
+####   Final Testing
+|Browser/Test|Chrome|Firefox|IE|Chrome Android-Remote Debugging|
+|:---|:---:|:---:|:---:|:---:|
+|Home Page|Passed|Passed|Passed|Passed|
+|Content Display|Passed|Passed|Passed|Passed|
+|Navigation, hover, etc|Passed|Passed|Passed|Passed|
+|Responsive Navigation|Passed|Passed|Passed|Passed
+|Styling|Passed|Passed|Passed|Passed|
+|Book us Form|Passed|Passed|Passed|Passed
+
+
+|Device/Test|Galaxy SIII|Galaxy 5|Laptop touch screen|iPhone 5/SE|iPhone 6/7/8|iPhone 6/7/8 Plus|iPhone X|iPad|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Home Page|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
+|Content Display|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
+|Navigation, hover, etc|Not Applicable|Not Applicable|Passed|Not Applicable|Not Applicable|Not Applicable|Not Applicable|Passed|
+|Responsive Navigation|Passed|Passed|Not Applicable|Passed|Passed|Passed|Passed|Not Applicable
+|Styling|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
+|Book us Form|Passed|Passed|Passed|Passed|Passed|Passed|Passed|Passed|
+
+**PLEASE NOTE:Many of the issues highlighted by the page Audits can be addressed by more advanced solutions that are beyond the scope of this HTML/CSS project, for example the Catalogue page performance values.**
+
+#####   Audit
+
+|Page/Criteria|Performance|Accessibility|Best Practices|SEO
+|:---|:---:|:---:|:---:|:---:|
+|Home|91|100|94|78
+|About us|73|92|88|100
+|Catalogue|03|93|75|89
+|News|85|92|88|100
+|Books us|11|92|88|89
+
+
 [Top of page](#topofpage)
 <a name="deployment"></a>
 ### Deployment
@@ -429,9 +498,10 @@ https://sonnerz.github.io/project01-user-centric-frontend/
 
 [Top of page](#topofpage)
 
-<a name="external"></a>
-## External Help
+<a name="credits"></a>
+## Credits
 
+### Content
 The following sites were used as resources to get sample css and debugging css.
 
 |Site|URL|Resource
@@ -442,3 +512,12 @@ The following sites were used as resources to get sample css and debugging css.
 |w3schools/|https://www.w3schools.com/|Multiple css styles were researched here
 |Bootstrap Date Picker	|https://bootstrap-datepicker.readthedocs.io|This site provided the full solution for the date picker used in the Booking enquiry form
 
+### Media
+All media was provided with permission from Divide of Everything
+
+
+### Acknowledgements
+For the About us page I received inspiration for the format of the page from the following site:
+https://conference.awwwards.com/san-francisco/speakers
+
+[Top of page](#topofpage)
